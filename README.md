@@ -204,7 +204,7 @@ Project Description: The project involves analyzing building permit data from Va
 
 ![ooo](https://github.com/user-attachments/assets/93cfc673-69b8-47ea-a280-85b74c91a16e)
 
-•	Dataset Preparation: Cleaning and processing of datasets, handling missing values and irrelevant columns.
+•	**Dataset Preparation**: Cleaning and processing of datasets, handling missing values and irrelevant columns.
 
 •	**Data Pipeline Design and Implementation**: Creation of ETL pipelines using AWS Glue to process and transform the data.
 
@@ -318,132 +318,244 @@ Project Description: The project involves analyzing building permit data from Va
 
 •Propose strategies for navigating regulatory environments efficiently.
 
-### Project 2 :University Recruitment and Selection Process Optimization
+### Project 2 :University Recruitment and Selection Process Optimization 
 
-Exploratory Data Analysis
+**Exploratory Data Analysis**
 Project Description: The project analyzed the efficiency of the recruitment and selection process at UCW for the year 2024. The objective was to determine the percentage of work hours spent per interview by each department relative to the total work hours across all departments.
-Objective: To assess how much time each department spends on interviews compared to the total time spent by all departments, helping to understand workload distribution and efficiency.
-Dataset:
-•	Source: CSV file containing work hours and interview counts by department
-•	Content: Number of interviews and work hours spent per interview for each department
-Methodology:
-1.	Formulate the Analytical Question: What percentage of total work hours is spent on interviews by each department?
-2.	Data Discovery: Data was generated in CSV format, converted to Excel, and analyzed by separating datasets for interviews and work hours.
-3.	Upload and Organize Data: Stored the cleaned data in Amazon S3 Raw folder.
-4.	Run Queries: Use AWS Athena to execute SQL queries for extracting and aggregating data.
-   Tools and Technologies:
-•	Data Storage: Amazon S3
-•	Data Analysis: AWS Athena
-Deliverables:
-•	Analysis Report: Percentage of work hours spent per interview by each department
-•	Visualizations: Bar graphs illustrating the data
 
-Timeline:
-Day 1:
-Convert CSV to Excel, upload data to Amazon S3, and create the raw folder.
-Organize datasets for interviews and work hours.
+**Objective**: To assess how much time each department spends on interviews compared to the total time spent by all departments, helping to understand workload distribution and efficiency.
 
-Day 2:
-Query Execution in AWS Athena:
-Run SQL queries to extract and aggregate data based on interview hours by department.
-Calculate the percentage of total work hours for each department.
+**Dataset**:
+
+•**Source**: CSV file containing work hours and interview counts by department
+
+•**Content**: Number of interviews and work hours spent per interview for each department
+
+**Methodology**:
+
+•**Formulate the Analytical Question**: What percentage of total work hours is spent on interviews by each department?
+
+•**Data Discovery**: Data was generated in CSV format, converted to Excel, and analyzed by separating datasets for interviews and work hours.
+
+<img width="798" alt="ooo" src="https://github.com/user-attachments/assets/e00c35fc-7343-4de7-98e5-9f53e605a7a3">
 
 
-Descriptive Analysis
+•**Upload and Organize Data**: Stored the cleaned data in Amazon S3 Raw folder.
 
-Project Description:This project involved summarizing the recruitment and selection process data, specifically analyzing the work hours spent per interview to measure efficiency across departments.
+![ooo](https://github.com/user-attachments/assets/34da382f-27ff-4aaf-a8b0-c822e9d151d0)
 
-Objective:To summarize key metrics, such as work hours per interview, and provide a detailed overview of departmental performance in the recruitment process.
+•**Run Queries**: Use AWS Athena to execute SQL queries for extracting and aggregating data.
 
-Dataset:Source: CSV file containing work hours and interview data for each department.
+![ooo](https://github.com/user-attachments/assets/ddff287a-1b01-49ed-bb1e-f0af1bb13fff)
+   
+   
+**Tools and Technologie**s:
 
-Methodology:
-Data Summary: Used AWS Athena to generate summaries like total work hours and average time per interview for each department.
-Visualize Data: Created bar graphs in Excel to visually represent the percentage of total work hours spent on interviews by each department.
+•	**Data Storage**: Amazon S3
 
-Tools and Technologies:
-AWS Athena: For summarizing data.
-AWS Glue: For organizing and structuring the dataset.
+•	**Data Analysis**: AWS Athena
 
-Deliverables:Descriptive Summary Report: Insights into work hours per interview by department.
+**Deliverables**:
 
-Timeline:
+•	**Analysis Report**: Percentage of work hours spent per interview by each department
 
-Day 3:
-Generate summaries such as total work hours and average time per interview.
-Extract insights for each department.
-Create bar graphs showing the percentage of total work hours spent on interviews for each department.
+•	**Visualizations**: Bar graphs illustrating the data
 
-Day 4:
-Finalize data summaries in AWS Athena.
-Review and validate the aggregated data.
+**Timeline**:
 
+**Day 1**:
 
+- Convert CSV to Excel, upload data to Amazon S3, and create the raw folder.
+  
+- Organize datasets for interviews and work hours.
 
-Data Wrangling for Recruitment and Selection Data at UCW
-Project Description:
-Data wrangling involves transforming and preparing the recruitment and selection data for analysis by addressing issues such as missing values, inconsistent formats, and unnecessary columns.
-Project Title:
-Data Wrangling for Recruitment and Selection Data at UCW
-Objective:
-To prepare the recruitment and selection dataset for analysis by cleaning, structuring, and securing the data to ensure accuracy, consistency, and confidentiality.
-Background:
-The dataset includes work hours and interview counts across different departments for 2024. Proper data wrangling is essential to ensure the dataset is reliable and ready for in-depth analysis.
-Dataset:
-The dataset consists of work hours and interview data collected from various departments, provided in CSV format.
-Methodology:
-•	Data Collection: Data was extracted from CSV files and initially uploaded to a landing folder.
-•	Data Cleaning: Missing values and inconsistencies were addressed by removing extraneous columns and correcting inaccuracies.
-•	Data Transformation: Standardized formats and structures, including converting date formats and renaming columns for clarity.
-•	Data Structuring: Aggregated data by department and summarized key metrics to prepare it for analysis.
-•	Data Storage: Cleaned and transformed data was moved to curated and trusted folders in Amazon S3.
-• Data Pipeline Design and Implementation: Creation of ETL pipelines using AWS Glue to process and transform the data
-•	Data Protection: Data encryption was applied using AWS Key Management Service (KMS) to secure data both in primary and backup storage locations.
-• Data Governance: Applied data quality checks using AWS Glue, including detecting and masking sensitive information and evaluating data quality with completeness rules.
-Tools and Technologies:
-•	AWS Glue: For ETL processes, including cleaning and transforming data.
-•	Excel: For initial data inspection and manual adjustments.
-•	AWS Key Management Service (KMS): For managing encryption keys.
-•	Amazon S3: For storing and managing encrypted data.
-Deliverables:
-•	Cleaned Data: Dataset with missing values addressed, formats standardized, and unnecessary columns removed.
-•	Structured Data: Well-organized dataset ready for analysis.
-•	Encrypted Data: Data protected by encryption keys throughout its lifecycle.
-•	Backup and Replication: Consistent data protection across primary and backup storage.
-•	Governance Compliance: Data meets quality standards and governance guidelines.
-Timeline:
-Day 5:
-Address missing values and inconsistencies.
-Standardize formats, remove unnecessary columns, and rename columns for clarity.
-Organize data by department and summarize key metrics for analysis.
+**Day 2**:
 
-Day 6:
-ETL Pipeline Design and Data Protection:
-Set up ETL pipelines using AWS Glue for data transformation.
-Apply encryption using AWS KMS for data protection and back up the data in Amazon S3.
+- Query Execution in AWS Athena
+  
+- Run SQL queries to extract and aggregate data based on interview hours by department.
+  
+- Calculate the percentage of total work hours for each department.
 
 
-Quality Control
-Project Description: Quality control involves ensuring the accuracy and reliability of the recruitment and selection data by implementing validation checks and addressing any data quality issues.
-Project Title: Quality Control for Recruitment and Selection Data at UCW
-Objective: To ensure the integrity and accuracy of the recruitment and selection data through validation and error-checking processes.
-Dataset: The dataset includes work hours and interview counts for different departments for the year 2024.
-Methodology:
-•	Data Validation: Conducted validation checks to ensure data accuracy, including cross-referencing with source data and checking for discrepancies.
-•	Error Detection: Identified and corrected errors in the dataset, such as outliers, inconsistencies, and data entry mistakes.
-•	Data Quality Metrics: Established metrics for data quality, including completeness, accuracy, and consistency, and applied these metrics to the dataset.
-•	Ongoing Monitoring: Implemented processes for ongoing data quality monitoring to ensure continued accuracy and reliability.
-Tools and Technologies:
-•	AWS Glue: For data validation and quality checks during ETL processes.
-•	AWS Athena: For running queries to detect anomalies and ensure data integrity.
-•	Excel: For manual validation and quality checks.
-Deliverables:
-•	Validated Data: Data that has undergone validation checks and error corrections.
-•	Quality Reports: Reports detailing data quality metrics and any issues addressed.
 
-Timeline:
-Day 7:
-Validate the dataset by cross-referencing with the source data.
-Detect and correct any errors or inconsistencies using AWS Glue and AWS Athena.
-Implement monitoring tools like AWS CloudWatch for continuous data quality control.
-Prepare a quality control report summarizing the validation checks and any errors addressed.
+
+
+
+**Descriptive Analysis**
+
+**Project Description**:This project involved summarizing the recruitment and selection process data, specifically analyzing the work hours spent per interview to measure efficiency across departments.
+
+**Objective**:To summarize key metrics, such as work hours per interview, and provide a detailed overview of departmental performance in the recruitment process.
+
+**Dataset**
+
+**Source**: CSV file containing work hours and interview data for each department.
+
+**Methodology**:
+
+•**Data Summary**: Used AWS Athena to generate summaries like total work hours and average time per interview for each department.
+
+•**Visualize Data**: Created bar graphs in Excel to visually represent the percentage of total work hours spent on interviews by each department.
+
+<img width="375" alt="ooo" src="https://github.com/user-attachments/assets/717e75df-c7bf-4ef4-9a7f-81047f2ea3df">
+
+**Tools and Technologies**:
+
+•**AWS Athena**: For summarizing data.
+
+•**AWS Glue**: For organizing and structuring the dataset.
+
+**Deliverables**:
+
+**Descriptive Summary Report**: Insights into work hours per interview by department.
+
+
+**Timeline**:
+
+**Day 3**:
+
+- Generate summaries such as total work hours and average time per interview.
+  
+- Extract insights for each department.
+  
+- Create bar graphs showing the percentage of total work hours spent on interviews for each department.
+
+**Day 4**:
+
+- Finalize data summaries in AWS Athena.
+
+- Review and validate the aggregated data.
+
+
+
+**Data Wrangling** 
+
+**Project Description**:Data wrangling involves transforming and preparing the recruitment and selection data for analysis by addressing issues such as missing values, inconsistent formats, and unnecessary columns.
+
+**Project Title**:Data Wrangling for Recruitment and Selection Data at UCW
+
+**Objective**:To prepare the recruitment and selection dataset for analysis by cleaning, structuring, and securing the data to ensure accuracy, consistency, and confidentiality.
+
+**Background**:The dataset includes work hours and interview counts across different departments for 2024. Proper data wrangling is essential to ensure the dataset is reliable and ready for in-depth analysis.
+
+**Dataset**:The dataset consists of work hours and interview data collected from various departments, provided in CSV format.
+
+**Methodology**:
+•	**Data Collection**: Data was extracted from CSV files and initially uploaded to a landing folder.
+
+•	**Data Cleaning**: Missing values and inconsistencies were addressed by removing extraneous columns and correcting inaccuracies.
+
+![ooo](https://github.com/user-attachments/assets/c5ac91c6-1f93-408c-bc40-eb5855b0c5b3)
+
+•	**Data Transformation**: Standardized formats and structures, including converting date formats and renaming columns for clarity.
+
+•	**Data Structuring**: Aggregated data by department and summarized key metrics to prepare it for analysis.
+
+•	**Data Storage**: Cleaned and transformed data was moved to curated and trusted folders in Amazon S3.
+
+![ooo](https://github.com/user-attachments/assets/f7187ebe-c951-42ab-a93a-32ade60b6889)
+
+
+•       **Data Pipeline Design and Implementation**: Creation of ETL pipelines using AWS Glue to process and transform the data
+
+![ooo](https://github.com/user-attachments/assets/40fc1019-c236-4096-9801-552e6fed3128)
+
+•	**Data Protection**: Data encryption was applied using AWS Key Management Service (KMS) to secure data both in primary and backup storage locations.
+
+![ooo](https://github.com/user-attachments/assets/84e01dc8-6712-4e9a-9857-b177e2d193ce)
+
+
+![ooo](https://github.com/user-attachments/assets/f2d7f281-11c5-4545-ad6f-61f88982b478)
+
+
+
+•       **Data Governance**: Applied data quality checks using AWS Glue, including detecting and masking sensitive information and evaluating data quality with completeness rules.
+
+![ooo](https://github.com/user-attachments/assets/de880380-5511-4c01-bf7f-2ee31dc6b05a)
+
+**Tools and Technologies**:
+
+•	**AWS Glue**: For ETL processes, including cleaning and transforming data.
+
+•	**AWS Key Management Service (KMS)**: For managing encryption keys.
+
+•	**Amazon S3**: For storing and managing encrypted data.
+
+**Deliverables**:
+
+•	**Cleaned Data**: Dataset with missing values addressed, formats standardized, and unnecessary columns removed.
+
+•	**Structured Data**: Well-organized dataset ready for analysis.
+
+•	**Encrypted Data**: Data protected by encryption keys throughout its lifecycle.
+
+•	**Backup and Replication**: Consistent data protection across primary and backup storage.
+
+•	**Governance Compliance**: Data meets quality standards and governance guidelines.
+
+**Timeline**:
+
+**Day 5**:
+
+- Address missing values and inconsistencies.
+  
+- Standardize formats, remove unnecessary columns, and rename columns for clarity.
+  
+- Organize data by department and summarize key metrics for analysis.
+
+**Day 6**:
+
+- ETL Pipeline Design and Data Protection
+  
+- Set up ETL pipelines using AWS Glue for data transformation.
+  
+- Apply encryption using AWS KMS for data protection and back up the data in Amazon S3.
+
+
+**Quality Control**
+
+**Project Description**: Quality control involves ensuring the accuracy and reliability of the recruitment and selection data by implementing validation checks and addressing any data quality issues.
+
+**Project Title**: Quality Control for Recruitment and Selection Data at UCW
+
+**Objective**: To ensure the integrity and accuracy of the recruitment and selection data through validation and error-checking processes.
+
+**Dataset**: The dataset includes work hours and interview counts for different departments for the year 2024.
+
+**Methodology**:
+
+•	**Data Validation**: Conducted validation checks to ensure data accuracy, including cross-referencing with source data and checking for discrepancies.
+
+•	**Error Detection**: Identified and corrected errors in the dataset, such as outliers, inconsistencies, and data entry mistakes.
+
+•	**Data Quality Metrics**: Established metrics for data quality, including completeness, accuracy, and consistency, and applied these metrics to the dataset.
+
+•	**Ongoing Monitoring**: Implemented processes for ongoing data quality monitoring to ensure continued accuracy and reliability.
+
+<img width="959" alt="qwee" src="https://github.com/user-attachments/assets/e0dc47f2-65c3-45b8-a8cc-11de69197013">
+
+
+**Tools and Technologies**:
+
+•	**AWS Glue**: For data validation and quality checks during ETL processes.
+
+•	**AWS Athena**: For running queries to detect anomalies and ensure data integrity.
+
+**Deliverables**:
+
+•	**Validated Data**: Data that has undergone validation checks and error corrections.
+
+•	**Quality Reports**: Reports detailing data quality metrics and any issues addressed.
+
+**Timeline**:
+
+**Day 7**:
+
+- Validate the dataset by cross-referencing with the source data.
+  
+- Detect and correct any errors or inconsistencies using AWS Glue and AWS Athena.
+  
+- Implement monitoring tools like AWS CloudWatch for continuous data quality control.
+  
+- Prepare a quality control report summarizing the validation checks and any errors addressed.
