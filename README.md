@@ -42,3 +42,4 @@ Objective: To explore and understand the distribution and trends in permit proce
 Dataset: The dataset includes building permit records from Vancouver’s Open Data Portal, with 296 records for 2023 and 191 records for 2024.
 Methodology:
 •	Data Discovery: Filtering of the dataset to focus on relevant records, resulting in a manageable number of entries for each year.
+![123](https://github.com/user-attachments/assets/cc8c3eb1-d3f5-4d6f-89cd-498b734855f3)
