@@ -2,32 +2,32 @@
 
 **Project Objective:**
 
-•Assess the efficiency of the university’s recruitment and selection process.
+•Study trends and patterns in issued building permits in the property development sector.
 
 **Focus Areas:**
 
-•Evaluate time spent on interviews across departments.
+•Identify key drivers affecting building permit issuance.
 
-•Identify resource wastage and inefficiencies in the hiring process.
+•Analyze the impact of government policies on property development.
 
 **Approach:**
 
-•Analyze the hours dedicated to interviews in 2024.
+•Examine historical permit data and relevant regulations.
 
-•Investigate recruitment bottlenecks and challenges.
+•Assess the effects of market conditions on development trends.
 
 **Goal:**
 
-•Propose strategies to streamline the recruitment process.
+•Provide insights for developers and policymakers to improve project planning.
 
-•Optimize resource usage and reduce time-to-hire.
-
+•Propose strategies for navigating regulatory environments efficiently.
 
 
 ### Project 1 :Analysis of Issued Building Permits in Property Development  
                                                                                 
-**Exploratory Data Analysis**
-Project Description: The project involves analyzing building permit data from Vancouver to identify trends, patterns, and structures in permit processing times.
+**1**. **Exploratory Data Analysis**
+
+**Project Description**: The project involves analyzing building permit data from Vancouver to identify trends, patterns, and structures in permit processing times.
 
 **Project Title:** Exploratory Analysis of Building Permit Processing Times in Vancouver
 
@@ -83,7 +83,7 @@ Project Description: The project involves analyzing building permit data from Va
 
 
 
-**Descriptive Analysis**
+**2**. **Descriptive Analysis**
 
 **Project Description:** This analysis summarizes key features of the building permit data to provide a clear overview of permit processing times.
 
@@ -102,6 +102,19 @@ Project Description: The project involves analyzing building permit data from Va
 
 <img width="242" alt="ooo" src="https://github.com/user-attachments/assets/12a3fd26-abd0-4a19-ad76-52192eedb110">
 
+•       **Publishing in General Server** -The data visualization was made available on a general server for internal users, providing restricted access to the organization via Windows Remote Desktop.
+
+![ooo](https://github.com/user-attachments/assets/19a83f5b-f136-4925-a57e-e27774331ef7)
+
+
+![000-2](https://github.com/user-attachments/assets/28e3e965-583f-4545-8888-f327255d8deb)
+
+
+
+ •      **Publishing in web Server** -The visualization was eventually made publicly accessible through a web server hosted on AWS EC2
+
+ ![000-2](https://github.com/user-attachments/assets/a2ed39d9-9465-4c03-a10a-2a14687a9554)
+ 
 
 **Tools and Technologies:**
 
@@ -109,6 +122,9 @@ Project Description: The project involves analyzing building permit data from Va
 •	**Excel:** For creating pie charts and visualizing data.
 
 •	**AWS Athena:** For querying and summarizing data.
+
+<img width="142" alt="000-2" src="https://github.com/user-attachments/assets/f219952c-b3e3-47b1-8389-9c820c9346d6">
+
 
 **Deliverables:**
 
@@ -139,7 +155,7 @@ Project Description: The project involves analyzing building permit data from Va
 
 
 
-**Diagnostic Analysis**
+**3**. **Diagnostic Analysis**
 
 **Project Description**: The project focuses on understanding the reasons behind observed trends and anomalies in permit processing times.
 
@@ -168,6 +184,10 @@ Project Description: The project involves analyzing building permit data from Va
 
 •	**AWS Glue**: For data transformation and pipeline management.
 
+<img width="251" alt="image" src="https://github.com/user-attachments/assets/cebd0ba2-c2f7-4629-b0e4-d55b97fd6833">
+
+
+
 **Deliverables**:
 
 •	**Cleaned Data**: Data with missing values handled and irrelevant columns removed.
@@ -186,7 +206,7 @@ Project Description: The project involves analyzing building permit data from Va
 
 
 
-**Data Wrangling for Building Permit Analysis**
+**4**. **Data Wrangling**
 
 **Project Description**: The focus is on transforming raw data into a structured and clean format suitable for analysis.
 
@@ -209,6 +229,70 @@ Project Description: The project involves analyzing building permit data from Va
 •	**Data Pipeline Design and Implementation**: Creation of ETL pipelines using AWS Glue to process and transform the data.
 
 ![ooo](https://github.com/user-attachments/assets/d0bbbced-624f-483d-9e93-b7f492539236)
+
+			
+•	**Data Monitoring**:
+
+ - 	AWS CloudWatch for resource tracking, performance, and costs.
+
+   ![ooo](https://github.com/user-attachments/assets/b518345e-9900-4759-a745-efdcd6fbd4f2)
+
+ -  AWS CloudTrail for auditing and logging.
+
+   ![ooo](https://github.com/user-attachments/assets/1722e050-9b21-4546-be08-d01fe40c9364)
+   
+ -  Alarms in CloudWatch for cost management and notifications.
+
+   ![ooo](https://github.com/user-attachments/assets/960451b8-6e6c-4d9a-a99e-e83d3e04bc17)
+
+			
+**Tools and Technologies**:
+
+•	**AWS Glue**: For ETL pipeline design and implementation.
+
+•	**AWS Data Brew**: For initial data cleaning and structuring.
+
+•	**AWS CloudWatch**: For monitoring metrics and managing costs.
+
+•	**AWS CloudTrail**: For auditing and tracking user activities.
+
+**Deliverables**:
+
+•	**Processed Data**: Cleaned and structured datasets.
+
+•	**ETL Pipelines**: Implemented pipelines for data transformation and loading.
+
+•	**Monitoring Setup**: Dashboards and alarms for cost and activity monitoring.
+
+**Timeline (2 days)**:
+
+**Day 6**:
+
+- Continue data preparation, focusing on cleaning and structuring datasets.
+  
+- Design and implement ETL pipelines using AWS Glue for data transformation.
+
+- Set up replication rules for automatic backup of the building permit data.
+
+**Day 7**:
+
+- Set up AWS CloudWatch for performance tracking and cost management, and AWS CloudTrail for auditing and logging activities.
+
+- Finalize the project by reviewing processed data, validating the data quality, and preparing a final report for stakeholders.
+
+
+
+**5**. **Quality Control**
+
+**Project Description**: Quality control involves ensuring the accuracy and reliability of the recruitment and selection data by implementing validation checks and addressing any data quality issues.
+
+**Project Title**: Quality Control for for Building Permit Analysis
+
+**Objective**: To ensure the integrity and accuracy of the Building Permit data through validation and error-checking processes.
+
+**Dataset**: Data from the Vancouver Open Data Portal, including building permit records for 2023 and 2024.
+
+**Methodology**:
 
 •	**Data Protection**:
 
@@ -233,94 +317,46 @@ Project Description: The project involves analyzing building permit data from Va
  -  Checks for sensitive data and data completeness.
 
    ![ooo](https://github.com/user-attachments/assets/c3a36c35-8e61-40b7-8c0f-3d048a53e4a9)
-			
-•	**Data Monitoring**:
 
- - 	AWS CloudWatch for resource tracking, performance, and costs.
-
-   ![ooo](https://github.com/user-attachments/assets/b518345e-9900-4759-a745-efdcd6fbd4f2)
-
- -  AWS CloudTrail for auditing and logging.
-
-   ![ooo](https://github.com/user-attachments/assets/1722e050-9b21-4546-be08-d01fe40c9364)
-   
- -  Alarms in CloudWatch for cost management and notifications.
-
-   ![ooo](https://github.com/user-attachments/assets/960451b8-6e6c-4d9a-a99e-e83d3e04bc17)
-
-			
 **Tools and Technologies**:
-
-•	**AWS Glue**: For ETL pipeline design and implementation.
-
-•	**AWS Data Brew**: For initial data cleaning and structuring.
 
 •	**AWS Key Management Service (KMS)**: For data encryption.
 
-•	**AWS CloudWatch**: For monitoring metrics and managing costs.
+•	**AWS Glue**: For ETL pipeline design and implementation.
 
-•	**AWS CloudTrail**: For auditing and tracking user activities.
 
-**Deliverables**:
+<img width="227" alt="image" src="https://github.com/user-attachments/assets/0692a309-2363-4a88-b024-926eb391f5f7">
 
-•	**Processed Data**: Cleaned and structured datasets.
-
-•	**ETL Pipelines**: Implemented pipelines for data transformation and loading.
-
-•	**Data Protection Setup**: Encrypted data and replication rules.
-
-•	**Data Governance Implementation**: Trusted zones and quality checks.
-
-•	**Monitoring Setup**: Dashboards and alarms for cost and activity monitoring.
-
-**Timeline (2 days)**:
-
-**Day 6**:
-
-- Continue data preparation, focusing on cleaning and structuring datasets.
-  
-- Design and implement ETL pipelines using AWS Glue for data transformation.
-
-- Apply encryption using AWS KMS to secure data in S3 buckets and backup folders.
-
-- Set up replication rules for automatic backup of the building permit data.
-
-**Day 7**:
-
-- Implement data governance measures such as creating trusted zones and conducting data quality checks.
-
-- Set up AWS CloudWatch for performance tracking and cost management, and AWS CloudTrail for auditing and logging activities.
-
-- Finalize the project by reviewing processed data, validating the data quality, and preparing a final report for stakeholders.
 
 
 # Project 2 
 
 **Project Objective:**
 
-•Study trends and patterns in issued building permits in the property development sector.
+•Assess the efficiency of the university’s recruitment and selection process.
 
 **Focus Areas:**
 
-•Identify key drivers affecting building permit issuance.
+•Evaluate time spent on interviews across departments.
 
-•Analyze the impact of government policies on property development.
+•Identify resource wastage and inefficiencies in the hiring process.
 
 **Approach:**
 
-•Examine historical permit data and relevant regulations.
+•Analyze the hours dedicated to interviews in 2024.
 
-•Assess the effects of market conditions on development trends.
+•Investigate recruitment bottlenecks and challenges.
 
 **Goal:**
 
-•Provide insights for developers and policymakers to improve project planning.
+•Propose strategies to streamline the recruitment process.
 
-•Propose strategies for navigating regulatory environments efficiently.
+•Optimize resource usage and reduce time-to-hire.
+
 
 ### Project 2 :University Recruitment and Selection Process Optimization 
 
-**Exploratory Data Analysis**
+**1**. **Exploratory Data Analysis**
 Project Description: The project analyzed the efficiency of the recruitment and selection process at UCW for the year 2024. The objective was to determine the percentage of work hours spent per interview by each department relative to the total work hours across all departments.
 
 **Objective**: To assess how much time each department spends on interviews compared to the total time spent by all departments, helping to understand workload distribution and efficiency.
@@ -337,7 +373,12 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 •**Data Discovery**: Data was generated in CSV format, converted to Excel, and analyzed by separating datasets for interviews and work hours.
 
-<img width="798" alt="ooo" src="https://github.com/user-attachments/assets/e00c35fc-7343-4de7-98e5-9f53e605a7a3">
+<img width="908" alt="image" src="https://github.com/user-attachments/assets/2d99b6ea-a0b9-4822-81f9-fe76f101c421">
+
+
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/92edcc91-0e3d-4184-8113-ca1c1f587be2">
+
+
 
 
 •**Upload and Organize Data**: Stored the cleaned data in Amazon S3 Raw folder.
@@ -382,7 +423,7 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 
 
-**Descriptive Analysis**
+**2**. **Descriptive Analysis**
 
 **Project Description**:This project involved summarizing the recruitment and selection process data, specifically analyzing the work hours spent per interview to measure efficiency across departments.
 
@@ -429,7 +470,7 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 
 
-**Data Wrangling** 
+**3**. **Data Wrangling** 
 
 **Project Description**:Data wrangling involves transforming and preparing the recruitment and selection data for analysis by addressing issues such as missing values, inconsistent formats, and unnecessary columns.
 
@@ -461,24 +502,10 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 ![ooo](https://github.com/user-attachments/assets/40fc1019-c236-4096-9801-552e6fed3128)
 
-•	**Data Protection**: Data encryption was applied using AWS Key Management Service (KMS) to secure data both in primary and backup storage locations.
-
-![ooo](https://github.com/user-attachments/assets/84e01dc8-6712-4e9a-9857-b177e2d193ce)
-
-
-![ooo](https://github.com/user-attachments/assets/f2d7f281-11c5-4545-ad6f-61f88982b478)
-
-
-
-•       **Data Governance**: Applied data quality checks using AWS Glue, including detecting and masking sensitive information and evaluating data quality with completeness rules.
-
-![ooo](https://github.com/user-attachments/assets/de880380-5511-4c01-bf7f-2ee31dc6b05a)
 
 **Tools and Technologies**:
 
 •	**AWS Glue**: For ETL processes, including cleaning and transforming data.
-
-•	**AWS Key Management Service (KMS)**: For managing encryption keys.
 
 •	**Amazon S3**: For storing and managing encrypted data.
 
@@ -488,11 +515,7 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 •	**Structured Data**: Well-organized dataset ready for analysis.
 
-•	**Encrypted Data**: Data protected by encryption keys throughout its lifecycle.
 
-•	**Backup and Replication**: Consistent data protection across primary and backup storage.
-
-•	**Governance Compliance**: Data meets quality standards and governance guidelines.
 
 **Timeline**:
 
@@ -506,14 +529,14 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 **Day 6**:
 
-- ETL Pipeline Design and Data Protection
+- ETL Pipeline Design
   
 - Set up ETL pipelines using AWS Glue for data transformation.
   
-- Apply encryption using AWS KMS for data protection and back up the data in Amazon S3.
 
 
-**Quality Control**
+
+**4**.. **Quality Control**
 
 **Project Description**: Quality control involves ensuring the accuracy and reliability of the recruitment and selection data by implementing validation checks and addressing any data quality issues.
 
@@ -531,6 +554,19 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 •	**Data Quality Metrics**: Established metrics for data quality, including completeness, accuracy, and consistency, and applied these metrics to the dataset.
 
+•	**Data Protection**: Data encryption was applied using AWS Key Management Service (KMS) to secure data both in primary and backup storage locations.
+
+![ooo](https://github.com/user-attachments/assets/84e01dc8-6712-4e9a-9857-b177e2d193ce)
+
+
+![ooo](https://github.com/user-attachments/assets/f2d7f281-11c5-4545-ad6f-61f88982b478)
+
+
+•       **Data Governance**: Applied data quality checks using AWS Glue, including detecting and masking sensitive information and evaluating data quality with completeness rules.
+
+![ooo](https://github.com/user-attachments/assets/de880380-5511-4c01-bf7f-2ee31dc6b05a)
+
+
 •	**Ongoing Monitoring**: Implemented processes for ongoing data quality monitoring to ensure continued accuracy and reliability.
 
 <img width="959" alt="qwee" src="https://github.com/user-attachments/assets/e0dc47f2-65c3-45b8-a8cc-11de69197013">
@@ -540,6 +576,8 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 
 •	**AWS Glue**: For data validation and quality checks during ETL processes.
 
+•	**AWS Key Management Service (KMS)**: For managing encryption keys.
+
 •	**AWS Athena**: For running queries to detect anomalies and ensure data integrity.
 
 **Deliverables**:
@@ -547,6 +585,12 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 •	**Validated Data**: Data that has undergone validation checks and error corrections.
 
 •	**Quality Reports**: Reports detailing data quality metrics and any issues addressed.
+
+•	**Encrypted Data**: Data protected by encryption keys throughout its lifecycle.
+
+•	**Backup and Replication**: Consistent data protection across primary and backup storage.
+
+•	**Governance Compliance**: Data meets quality standards and governance guidelines.
 
 **Timeline**:
 
@@ -557,5 +601,7 @@ Project Description: The project analyzed the efficiency of the recruitment and 
 - Detect and correct any errors or inconsistencies using AWS Glue and AWS Athena.
   
 - Implement monitoring tools like AWS CloudWatch for continuous data quality control.
+  
+- Apply encryption using AWS KMS for data protection and back up the data in Amazon S3.
   
 - Prepare a quality control report summarizing the validation checks and any errors addressed.
